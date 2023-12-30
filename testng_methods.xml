@@ -5,10 +5,13 @@
         <classes>
             <class name="demoTestNG.First_Automated_Test">
                 <methods>
-                    <include name="login"/>
+                    <include name="Login_both_correct"/>
+                    <include name="Login_invalid_username"/>
+                    <include name="Login_invalid_password"/>
+                    <include name="Login_both_invalid"/>
+                    <include name="Login_both_empty"/>
                 </methods>
             </class>
-
         </classes>
     </test>
 </suite>
