@@ -15,16 +15,17 @@ import org.testng.annotations.Test;
 public class InventeryPage {
     WebDriver driver;
 
+    @BeforeClass
+    public void driversetup(){
+        WebDriverManager.chromedriver().setup();
+    }
     @BeforeMethod
     public void setup(){
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("https://www.saucedemo.com/v1/");
     }
-    @BeforeClass
-    public void driversetup(){
-        WebDriverManager.chromedriver().setup();
-    }
+
 
     @AfterMethod
     public void closeBrowser(){
@@ -64,4 +65,6 @@ public class InventeryPage {
             e.printStackTrace();
         }
     }
+
+
 }

@@ -47,6 +47,8 @@ public class First_Automated_Test {
         driver.findElement(By.xpath("//*[@id=\"login-button\"]")).click();
         String URL = driver.getCurrentUrl();
         Assert.assertEquals(URL,"https://www.saucedemo.com/v1/");
+        String error = driver.findElement(By.cssSelector("#login_button_container > div > form > h3")).getText();
+        Assert.assertEquals(error,"Epic sadface: Username and password do not match any user in this service");
     }
 
     @Test
@@ -59,6 +61,8 @@ public class First_Automated_Test {
         driver.findElement(By.xpath("//*[@id=\"login-button\"]")).click();
         String URL = driver.getCurrentUrl();
         Assert.assertEquals(URL,"https://www.saucedemo.com/v1/");
+        String error = driver.findElement(By.cssSelector("#login_button_container > div > form > h3")).getText();
+        Assert.assertEquals(error,"Epic sadface: Username and password do not match any user in this service");
     }
 
     @Test
@@ -71,6 +75,9 @@ public class First_Automated_Test {
         driver.findElement(By.xpath("//*[@id=\"login-button\"]")).click();
         String URL = driver.getCurrentUrl();
         Assert.assertEquals(URL,"https://www.saucedemo.com/v1/");
+        String error = driver.findElement(By.cssSelector("#login_button_container > div > form > h3")).getText();
+        Assert.assertEquals(error,"Epic sadface: Username and password do not match any user in this service");
+
     }
 
     @Test
@@ -83,6 +90,8 @@ public class First_Automated_Test {
         driver.findElement(By.xpath("//*[@id=\"login-button\"]")).click();
         String URL = driver.getCurrentUrl();
         Assert.assertEquals(URL,"https://www.saucedemo.com/v1/");
+        String error = driver.findElement(By.cssSelector("#login_button_container > div > form > h3")).getText();
+        Assert.assertEquals(error,"Epic sadface: Username is required");
     }
 
 
