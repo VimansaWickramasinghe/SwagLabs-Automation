@@ -11,9 +11,13 @@ public class First_Automated_Test {
     WebDriver driver;
 
     //use before class bcz this should execute before first test method
+
+    @BeforeClass
+    public void driversetup(){
+        WebDriverManager.chromedriver().setup();
+    }
     @BeforeMethod
     public void setup(){
-        WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("https://www.saucedemo.com/v1/");

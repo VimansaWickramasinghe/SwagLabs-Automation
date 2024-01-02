@@ -3,8 +3,8 @@
 <suite name = "Annotations">
 <test name="Run class Annotations">
     <classes>
-        <class name="demoTestNG.First_Automated_Test">
-
+        <class name="demoTestNG.First_Automated_Test"/>
+        <class name="demoTestNG.InventeryPage">
         </class>
     </classes>
 </test>

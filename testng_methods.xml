@@ -12,6 +12,11 @@
                     <include name="Login_both_empty"/>
                 </methods>
             </class>
+            <class name="demoTestNG.First_Automated_Test">
+                <methods>
+                    <include name="sort"/>
+                </methods>
+            </class>
         </classes>
     </test>
 </suite>
