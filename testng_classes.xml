@@ -4,8 +4,9 @@
 <test name="Run class Annotations">
     <classes>
         <class name="demoTestNG.First_Automated_Test"/>
-        <class name="demoTestNG.InventeryPage">
-        </class>
+        <class name="demoTestNG.InventeryPage"/>
+        <class name="demoTestNG.CartPage"/>
+        <class name="demoTestNG.CheckOutPage"/>
     </classes>
 </test>
 </suite>
